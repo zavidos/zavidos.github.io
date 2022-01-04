@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Data Visualization Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://fonts.cdnfonts.com/css/silom" rel="stylesheet">
+    <link href="//db.onlinewebfonts.com/c/e50f08c648d677fc2b0f52ac98afb797?family=Ayuthaya" rel="stylesheet" type="text/css"/>
+    <link href='https://fonts.googleapis.com/css?family=Sarala' rel='stylesheet'>
+    <link rel="stylesheet" href="../../fonts.googleapis.com/icon-family=Material+Icons.html">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+    .container {
+        display: flex;
+        align-items: right;
+        width:1920px;
+        height:500px;
+        zoom: 0.9;
+        transform: scale(0.9);
+      }
+
+      .iframe {
+        #zoom: 0.9;
+        #transform: scale(0.9);
+        }
+
+
+      img {
+        max-width: 100%;
+      }
+      .image {
+        flex-basis: 22%;
+        padding-left: 150px;
+      }
+
+      .text {
+        font-size: 20px;
+        padding-left: 50px;
+        padding-top: 50px;
+      }
+    body {
+        font-family: 'Helvetica';font-size: 22px;
+    }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <div class="text">
+      <b class="material-icons" style="font-size:55px;color:#299DAF;text-shadow:0px 0px 0px #000000;">COVID-19 swab tests</b>
+      <b class="material-icons" style="font-size:40px;color:#299DAF;text-shadow:0px 0px 0px #000000;"><br>One year of results from a single italian pharmacy</b>
+        <h3 style="color: black; font-family: Helvetica; font-weight:normal;" >An interactive data visualization of how the number of swabs per day changes in relation to DPCM. <br>
+          A subplot investigates the changes in the average age of tested people in relation to the time of the year <br> and the daily average temperature.<br></h3>
+          <i class="	fa fa-edit" style="font-size:24px; color: black ;"></i><span style="font-size: 20px; color: black; font-family: Helvetica; font-weight:normal;"><i>64 060 swab test (on 21 461 people)<br></i></span>
+          <i class="	fa fa-thermometer-half" style="font-size:24px; color: black ;"></i><span style="font-size: 20px; color: black; font-family: Helvetica; font-weight:normal;"><i>  Data are been integrated with historical weather data to compute average temperature <span style="font-size: 14px;">(source: https://www.3bmeteo.com/)<br></span></i></span>
+          <i class="fa fa-map-marker" style="font-size:24px; color: black ;"></i><span style="font-size: 20px; color: black; font-family: Helvetica; font-weight:normal;"><i> Data was collected from a pharmacy in the province of Padua<br></i></span>
+        <i class="fa fa-clock-o" style="font-size:24px; color: black ;"></i><span style="font-size: 20px; color: black; font-family: Helvetica; font-weight:normal;"><i>  Pharmacy offers swab test for Covid-19 since January 20, 2021 <br></i></span>
+        <i class="fa fa-download" style="font-size:24px; color: black ;"></i><span style="font-size: 20px; color: black; font-family: Helvetica; font-weight:normal;"><i> Data visualization updated at December 31, 2021<br> <br></i></span>
+        <i style="font-size:24px; color: black ;"></i><span style="font-size: 20px; color: black; font-family: Helvetica; font-weight:normal;"><i> Interactive data visualization allows zooming by chart region selection and filtering by clicking on legend labels</i></span>
+
+    </div>
+    <div class="image">
+      <img src="https://www.doctorsinitaly.com/wp-content/uploads/2021/06/Swab-test-in-Italy.png" >
+    </div>
+
+  </div>
+</body>
+    <body>
+
+<iframe class="iframe" scrolling="no" style="border:none;" seamless="seamless" src="DataCaViz.html" height="1150" width="120%"></iframe>
+</body>
+<h6 style="color: black; font-family: Helvetica; font-weight:normal; padding-left:50px"> Note: <br> * Average age is computed as rolling mean in 30 days<br> * Error bars in average age indicate 95% confidence interval</h6>
+
+</html>
