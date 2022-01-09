@@ -32,15 +32,47 @@
         max-width: 100%;
       }
       .image {
-        flex-basis: 22%;
+        flex-basis: 24%;
+
+      }
+      .image2{
+        flex-basis: 16%;
         padding-left: 100px;
       }
+
 
       .text {
         font-size: 20px;
         padding-left: 10px;
         padding-top: 50px;
       }
+      .arrow {
+  width: 1130px;
+  padding-left: 80px;
+}
+
+.line {
+  margin-top: 14px;
+  width: 1000px;
+  background: #299DAF;
+  height: 5px;
+  float: left;
+  padding-left: 100px;
+}
+
+.point {
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 30px solid #299DAF;
+  float: right;
+}
+
+.text2 {
+  font-size: 20px;
+  padding-left: 600px;
+}
     body {
         font-family: 'Helvetica';font-size: 22px;
     }
@@ -59,7 +91,6 @@
         <i class="fa fa-clock-o" style="font-size:24px; color: black ;"></i><span style="font-size: 20px; color: black; font-family: Helvetica; font-weight:normal;"><i>  Pharmacy offers swab test for Covid-19 since January 20, 2021 <br></i></span>
         <i class="fa fa-download" style="font-size:24px; color: black ;"></i><span style="font-size: 20px; color: black; font-family: Helvetica; font-weight:normal;"><i> Data visualization updated at December 31, 2021<br> <br></i></span>
         <i style="font-size:24px; color: black ;"></i><span style="font-size: 20px; color: black; font-family: Helvetica; font-weight:normal;"><i> Interactive data visualization allows zooming by chart region selection and filtering by clicking on legend labels</i></span>
-
     </div>
     <div class="image">
       <img src="https://www.doctorsinitaly.com/wp-content/uploads/2021/06/Swab-test-in-Italy.png" >
@@ -69,6 +100,20 @@
 </body>
     <body>
 
+    </div>
+    <div class="image2">
+      <img src="Immagine.png" height="180px" width="550px" >
+    </div>
+
+    </div>
+
+
+
+    <b class="text2" style="font-size:20px;color:#299DAF;"><i>Time<i></b>
+    <div class="arrow">
+      <div class="line"></div>
+      <div class="point"></div>
+    </div>
 <iframe class="iframe" scrolling="no" style="border:none;" seamless="seamless" src="DataCaViz.html" height="1120" width="120%"></iframe>
 </body>
 <h6 style="color: black; font-family: Helvetica; font-weight:normal; padding-left:50px"> Note: <br> * Average age is computed as rolling mean in 30 days<br> * Error bars in average age indicate 95% confidence interval</h6>
